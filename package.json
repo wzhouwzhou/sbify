@@ -1,0 +1,47 @@
+{
+  "name": "sbify",
+  "version": "1.0.0",
+  "description": "It's time to im🅱rove your strings",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify ./sbify.js --standalone sbify -o ./index.js -t babelify",
+    "test": "eslint ."
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": "commonjs"
+        }
+      ],
+      [ "minify" ]
+    ]
+  },
+  "browserslist": "cover 99.5%",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzhouwzhou/sbify.git"
+  },
+  "keywords": [
+    "sbify",
+    "string",
+    "replace",
+    "utility",
+    "🅱",
+    "🅱️"
+  ],
+  "author": "William Zhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wzhouwzhou/sbify/issues"
+  },
+  "homepage": "https://github.com/wzhouwzhou/sbify#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "babel-preset-minify": "^0.5.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3"
+  }
+}
