@@ -7,17 +7,7 @@
     "build": "browserify ./sbify.js --standalone sbify -o ./index.js -t babelify",
     "test": "eslint ."
   },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "modules": "commonjs"
-        }
-      ],
-      [ "minify" ]
-    ]
-  },
+  "babel": { "presets": [ [ "@babel/preset-env", { "modules": "commonjs" } ], [ "minify" ] ] },
   "browserslist": "cover 99.5%",
   "repository": {
     "type": "git",
